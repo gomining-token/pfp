@@ -1,0 +1,38 @@
+{
+  "name": "pfp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "goerli:deploy": "npx hardhat run scripts/create-go-miners.ts --network goerli",
+    "goerli:verify": "npx hardhat verify --network goerli 0x764840c4E339d6051204FDf99033dc5ab281d7cB",
+    "sepolia:deploy": "npx hardhat run scripts/create-go-miners.ts --network sepolia",
+    "sepolia:verify": "npx hardhat verify --network sepolia 0x2cb1b32fA5742fD30EFb8c9eA24FA0d1254bfb9E",
+    "mainnet:deploy": "npx hardhat run scripts/create-go-miners.ts --network mainnet",
+    "mainnet:verify": "npx hardhat verify --network mainnet 0x15213aA7DF58EF3cdAF1be67700a2C009B8e8E12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomining-token/pfp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomining-token/pfp/issues"
+  },
+  "homepage": "https://github.com/gomining-token/pfp#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "@openzeppelin/contracts-upgradeable": "^5.0.1",
+    "@openzeppelin/hardhat-upgrades": "^3.0.2",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.4"
+  }
+}
